@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Syafiq Arkana | Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #050505, #063b63, #008cff);
+            color: white;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* FOTO & NAMA */
+        .profile {
+            text-align: center;
+            margin-bottom: 25px;
+            animation: muncul 1s ease;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 25px #00aaff;
+        }
+
+        .profile h1 {
+            margin-top: 15px;
+            font-size: 32px;
+        }
+
+        .profile p {
+            margin-top: 7px;
+            color: #cceeff;
+        }
+
+        /* KARTU */
+        .card {
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            animation: naik 0.8s ease;
+        }
+
+        .card h2 {
+            color: #6dccff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.7;
+            color: #eeeeee;
+        }
+
+        /* SKILL */
+        .skill {
+            margin-top: 15px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .skill-fill {
+            width: 75%;
+            height: 100%;
+            background: #00aaff;
+            border-radius: 10px;
+        }
+
+        /* SOSMED */
+        .social {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background: #00aaff;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social:hover {
+            transform: scale(1.05);
+            background: #0077cc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #bdeaff;
+            font-size: 14px;
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes naik {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFIL -->
+        <div class="profile">
+            <img src="profile.jpg" alt="Foto Syafiq Arkana">
+
+            <h1>Syafiq Arkana</h1>
+            <p>Pelajar • Web Developer Pemula • Coding Enthusiast</p>
+        </div>
+
+
+        <!-- TENTANG AKU -->
+        <div class="card">
+            <h2>👋 Tentang Aku</h2>
+
+            <p>
+                Nama aku <b>Syafiq Arkana Adhiyatma</b>.
+                Aku lahir pada 3 Juni 2011 di Brebes, Jawa Tengah.
+                Saat ini aku berstatus sebagai pelajar di
+                <b>SMP Negeri 1 Brebes</b> dan duduk di kelas 9.
+            </p>
+        </div>
+
+
+        <!-- HOBI -->
+        <div class="card">
+            <h2>💻 Hobi</h2>
+
+            <p>
+                Di usia yang masih muda, aku ingin mengasah bakatku
+                di bidang coding. Karena itu, hobiku adalah belajar
+                coding dan mencoba membuat berbagai macam website.
+            </p>
+        </div>
+
+
+        <!-- SKILL -->
+        <div class="card">
+            <h2>🚀 Skill</h2>
+
+            <p>
+                Aku mampu memahami materi pemrograman dengan cukup
+                kompleks, walaupun terkadang membutuhkan waktu untuk
+                benar-benar memahaminya.
+            </p>
+
+            <div class="skill">
+                <b>Programming / Coding</b>
+
+                <div class="skill-bar">
+                    <div class="skill-fill"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SOSIAL MEDIA -->
+        <div class="card">
+            <h2>📱 Sosial Media</h2>
+
+            <p>
+                Kamu bisa menemukan aku di TikTok:
+            </p>
+
+            <a
+                class="social"
+                href="https://vm.tiktok.com/ZS9Sd6PQT2PdV-EE7Mb/"
+                target="_blank">
+                TikTok ↗
+            </a>
+        </div>
+
+
+        <footer>
+            © 2026 Syafiq Arkana Adhiyatma
+        </footer>
+
+    </div>
+
+</body>
+</html>
